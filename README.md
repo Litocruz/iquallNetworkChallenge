@@ -85,6 +85,8 @@ node_exporter_dir_conf: /etc/node_exporter
 
 [prometheus](https://prometheus.io/docs/prometheus/latest/installation/)
 
+[virtual venv](https://www.redhat.com/sysadmin/python-venv-ansible)
+
 
 
 
