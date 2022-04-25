@@ -59,7 +59,11 @@ Abrir un navegador y escribir [ip-controlador]:3000
 
 **contraseña:** *challenge*
   
-Ir a dashboard y visualizar graficas.
+### Agregar dashboards
+Una vez logueado en Grafana en la barra vertical de la derecha hay un icono +, al pasar el mouse arriba se despliega un menu, seleccionar **Import**. 
+En esta pantalla nos da la opcion de agregar un json o un id.
+
+En la siguiente pagina [Grafana Dashboards](https://grafana.com/grafana/dashboards/) se puede buscar un dasboard, copiar su ID y pegarlo. Automagicamente se despliega el dasboard completo.
 
 ## Configuración
 ### Modificar version node-exporter
@@ -84,6 +88,8 @@ node_exporter_dir_conf: /etc/node_exporter
 [prometheus node-exporter](https://prometheus.io/docs/guides/node-exporter/)
 
 [prometheus](https://prometheus.io/docs/prometheus/latest/installation/)
+
+[Grafana Dashboards](https://grafana.com/grafana/dashboards/)
 
 
 

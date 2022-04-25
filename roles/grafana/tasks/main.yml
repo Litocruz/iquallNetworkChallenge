@@ -65,16 +65,31 @@
     ds_url: "http://127.0.0.1:9090"
   changed_when: false
 
-- name: install node exporter dashboard
-  get_url:
-    url: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
-    dest: /var/lib/grafana/node-exporter.json
-    mode: '0755'
+#- name: install node exporter dashboard
+#  get_url:
+#    url: https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json
+#    #url: https://raw.githubusercontent.com/openshift/origin/master/examples/grafana/node-exporter-full-dashboard.json
+#    #url: https://raw.githubusercontent.com/starsliao/Prometheus/master/node_exporter/node-exporter-for-prometheus-dashboard-en.json
+#    dest: /var/lib/grafana/node-exporter.json
+#    mode: '0755'
 
-- name: activate dashboard for node exporter
-  template:
-    src: dashboard-node-exporter.yml.j2
-    dest: /etc/grafana/provisioning/dashboards/dashboard-node-exporter.yml
-    mode: 0755
-  notify: restart_grafana
+#- name: Import Grafana dashboard
+#  grafana_dashboard:
+#    grafana_url: "http://127.0.0.1:3000"
+#    grafana_user: "{{ grafana_admin_user }}"
+#    grafana_password: "{{ grafana_admin_password }}"
+#    state: present
+#    ds_type: "prometheus"
+#    commit_message: Updated by ansible
+#    overwrite: yes
+#    path: /var/lib/grafana/node-exporter.json
+#  notify: restart_grafana
+
+
+#- name: activate dashboard for node exporter
+#  template:
+#    src: dashboard-node-exporter.yml.j2
+#    dest: /etc/grafana/provisioning/dashboards/dashboard-node-exporter.yml
+#    mode: 0755
+#  notify: restart_grafana
 

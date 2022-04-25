@@ -10,5 +10,7 @@ default: up
 
 
 install: ## Corre ansible
-	ansible-playbook -i $(INVENTORY_FILE) playbooks/grafana.yml
+	ansible-playbook -i $(INVENTORY_FILE) playbooks/all.yml -K
 
+monitor: ## Corre ansible
+	ansible-playbook -i $(INVENTORY_FILE) playbooks/grafana.yml -K
