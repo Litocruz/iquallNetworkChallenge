@@ -47,11 +47,13 @@ Consola de monitoreo con Prometheus, representado graficamente con Grafana
 ### Resultado
 
 **nodo controlador:** prometheus/grafana + node-exporter
+
 **nodo/s a monitorear:** node-exporter
 
 ## Consola de monitoreo Grafana
 
 Abrir un navegador y escribir [ip-controlador]:3000
+
 **usuario:** *admin*
 **contraseña:** *challenge*
   
