@@ -91,6 +91,8 @@ node_exporter_dir_conf: /etc/node_exporter
 
 [Grafana Dashboards](https://grafana.com/grafana/dashboards/)
 
+[virtual venv](https://www.redhat.com/sysadmin/python-venv-ansible)
+
 
 
 
