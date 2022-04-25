@@ -55,6 +55,7 @@ Consola de monitoreo con Prometheus, representado graficamente con Grafana
 Abrir un navegador y escribir [ip-controlador]:3000
 
 **usuario:** *admin*
+
 **contraseña:** *challenge*
   
 Ir a dashboard y visualizar graficas.
