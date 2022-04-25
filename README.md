@@ -4,7 +4,7 @@ Consola de monitoreo con Prometheus, representado graficamente con Grafana
 
 ## Requisitos previos
   1. Nodo controlador
-      + Servidor con ansible instalado
+      + Servidor con ansible instalado.
         * python >= 2.7
         * ssh
   2. Nodos a monitorear
@@ -13,7 +13,8 @@ Consola de monitoreo con Prometheus, representado graficamente con Grafana
        ```bash 
        # ansible myhost --become -m raw -a "apt/yum install -y python2" 
        ```
-  
+**NOTA:** *Ansible puede correrse en un servidor separado que configure el nodo controlador y los nodos a monitorear*
+
   [Documentacion:](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
 ## Pasos para la implementación:
